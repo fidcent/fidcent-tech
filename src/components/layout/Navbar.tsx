@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/Logo";
 import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
