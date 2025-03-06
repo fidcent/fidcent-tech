@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { CheckIcon, CodeIcon, CloudIcon, SmartphoneIcon, ServerIcon, ChipIcon } from "lucide-react";
+import { CheckIcon, CodeIcon, CloudIcon, SmartphoneIcon, ServerIcon, CpuIcon } from "lucide-react";
 
 export const ServicesSection = () => {
   const services = [
@@ -73,7 +73,7 @@ export const ServicesSection = () => {
       id: "iot",
       title: "IoT Development",
       description: "Internet of Things solutions for smart devices and systems, integrated with existing business processes.",
-      icon: ChipIcon,
+      icon: CpuIcon,
       features: [
         "IoT device prototyping",
         "Embedded systems development",
