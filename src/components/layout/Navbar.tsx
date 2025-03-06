@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/Logo";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,20 +24,24 @@ export const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="text-sm font-medium hover:text-fidcent-green transition-colors">
+          <Link to="/services" className="text-sm font-medium hover:text-fidcent-green transition-colors">
             Services
-          </a>
-          <a href="#about" className="text-sm font-medium hover:text-fidcent-green transition-colors">
+          </Link>
+          <Link to="/about" className="text-sm font-medium hover:text-fidcent-green transition-colors">
             About
-          </a>
-          <a href="#contact" className="text-sm font-medium hover:text-fidcent-green transition-colors">
+          </Link>
+          <Link to="/contact" className="text-sm font-medium hover:text-fidcent-green transition-colors">
             Contact
-          </a>
-          <Button className="gradient-bg text-white hover:opacity-90 transition-opacity">
-            Get Started
-          </Button>
+          </Link>
+          <Link to="/contact">
+            <Button className="gradient-bg text-white hover:opacity-90 transition-opacity">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

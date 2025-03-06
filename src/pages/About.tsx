@@ -1,16 +1,16 @@
 
 import { Navbar } from "@/components/layout/Navbar";
-import { Hero } from "@/components/home/Hero";
+import { AboutSection } from "@/components/about/AboutSection";
 import { Footer } from "@/components/layout/Footer";
 
-const Index = () => {
+const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Hero />
+      <AboutSection />
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default About;

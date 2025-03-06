@@ -1,16 +1,16 @@
 
 import { Navbar } from "@/components/layout/Navbar";
-import { Hero } from "@/components/home/Hero";
+import { ContactSection } from "@/components/contact/ContactSection";
 import { Footer } from "@/components/layout/Footer";
 
-const Index = () => {
+const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Hero />
+      <ContactSection />
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Contact;
