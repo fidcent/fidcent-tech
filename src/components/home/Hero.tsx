@@ -85,9 +85,9 @@ export const Hero = () => {
                       <div className="text-gray-400 dark:text-gray-500">// Fidcent Tech solutions</div>
                       <div><span className="text-purple-600 dark:text-purple-400">const</span> <span className="text-blue-600 dark:text-blue-400">result</span> = <span className="text-orange-600 dark:text-orange-400">await</span> <span className="text-green-600 dark:text-green-500">FidcentTech</span>.<span className="text-blue-600 dark:text-blue-400">solve</span>(yourChallenge);</div>
                       <div className="text-gray-400 dark:text-gray-500">// Transforming businesses with technology</div>
-                      <div><span className="text-red-600 dark:text-red-400">if</span> (result.<span className="text-blue-600 dark:text-blue-400">isSuccessful</span>) {</div>
+                      <div><span className="text-red-600 dark:text-red-400">if</span> (result.<span className="text-blue-600 dark:text-blue-400">isSuccessful</span>) {"{"}</div>
                       <div className="pl-4"><span className="text-purple-600 dark:text-purple-400">return</span> <span className="text-green-600 dark:text-green-500">"Innovation delivered!"</span>;</div>
-                      <div>}</div>
+                      <div>{"}"}</div>
                     </div>
                   </div>
                 </div>
