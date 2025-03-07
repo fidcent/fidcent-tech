@@ -2,7 +2,7 @@
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ChevronRight, Linkedin, Facebook, Twitter, Mail, Phone } from "lucide-react";
+import { ChevronRight, Linkedin, Facebook, Twitter, Mail, Phone, CheckCircle } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -15,13 +15,13 @@ export const Footer = () => {
               Empowering businesses through innovative and scalable technology solutions.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="https://linkedin.com/in/fidcent-tech" aria-label="LinkedIn" className="hover:text-fidcent-green transition-colors">
+              <a href="https://linkedin.com/in/fidcenttech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-fidcent-green transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="https://twitter.com/fidcent_tech" aria-label="Twitter" className="hover:text-fidcent-green transition-colors">
+              <a href="https://twitter.com/fidcenttech" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-fidcent-green transition-colors">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="https://facebook.com/fidcenttech" aria-label="Facebook" className="hover:text-fidcent-green transition-colors">
+              <a href="https://facebook.com/fidcenttech" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-fidcent-green transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
             </div>

@@ -1,27 +1,34 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Code, Cpu, Database, Globe, Server, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, Code2, Command, Database, FileJson, Github, Layers, Lock, PackageOpen, Server, Smartphone } from "lucide-react";
 
 export const Hero = () => {
+  // Changed from services to actual technologies
   const techStack = [
-    { name: "Web", icon: Globe },
-    { name: "Mobile", icon: Cpu },
-    { name: "Cloud", icon: Server },
-    { name: "AI/ML", icon: Database },
-    { name: "IoT", icon: Zap },
-    { name: "DevOps", icon: Code },
+    { name: "React", icon: Code2 },
+    { name: "Node.js", icon: Server },
+    { name: "TypeScript", icon: FileJson },
+    { name: "Flutter", icon: Smartphone },
+    { name: "Python", icon: Command },
+    { name: "AWS", icon: Layers },
+    { name: "MongoDB", icon: Database },
+    { name: "GraphQL", icon: PackageOpen },
+    { name: "Docker", icon: Github },
+    { name: "OAuth", icon: Lock },
   ];
 
   return (
     <div className="relative min-h-screen">
-      {/* Background gradient */}
+      {/* Background gradient - Improved light mode */}
       <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-100 dark:from-fidcent-navy dark:to-black -z-10"></div>
       
-      {/* Abstract shapes */}
+      {/* Abstract shapes - Enhanced for light mode */}
       <div className="absolute inset-0 overflow-hidden -z-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-fidcent-green/10 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-fidcent-blue/10 rounded-full filter blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-fidcent-green/10 dark:bg-fidcent-green/10 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-fidcent-blue/10 dark:bg-fidcent-blue/10 rounded-full filter blur-3xl"></div>
+        {/* Added soft color accent for light mode */}
+        <div className="absolute top-1/2 right-1/3 w-40 h-40 bg-sky-500/5 dark:bg-fidcent-blue/5 rounded-full filter blur-2xl"></div>
       </div>
       
       {/* Hero content */}
@@ -52,12 +59,12 @@ export const Hero = () => {
                 </Link>
               </div>
               
-              {/* Tech stack logos */}
+              {/* Tech stack logos - Updated to show actual technologies */}
               <div className="pt-8">
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Technologies we work with</p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   {techStack.map((tech, idx) => (
-                    <div key={idx} className="flex items-center gap-2 px-3 py-2 rounded-full bg-white dark:bg-fidcent-navy/80 shadow-sm">
+                    <div key={idx} className="flex items-center gap-2 px-3 py-2 rounded-full bg-white dark:bg-fidcent-navy/80 shadow-sm border border-gray-100 dark:border-gray-800">
                       <tech.icon size={16} className="text-fidcent-green" />
                       <span className="text-sm font-medium">{tech.name}</span>
                     </div>
@@ -66,20 +73,20 @@ export const Hero = () => {
               </div>
             </div>
             
-            <div className="glass-card rounded-2xl overflow-hidden shadow-xl animate-fade-in-up">
+            <div className="glass-card rounded-2xl overflow-hidden shadow-xl animate-fade-in-up border border-gray-100 dark:border-gray-800/20">
               <div className="relative aspect-[4/3] bg-gradient-to-br from-fidcent-green/20 to-fidcent-blue/20 p-8 flex items-center justify-center">
                 <div className="absolute w-24 h-24 bg-fidcent-green/40 rounded-full top-12 left-12 filter blur-xl"></div>
                 <div className="absolute w-32 h-32 bg-fidcent-blue/30 rounded-full bottom-12 right-12 filter blur-xl"></div>
                 
                 <div className="relative z-10 w-full max-w-md">
-                  <div className="bg-white dark:bg-fidcent-navy/90 rounded-xl shadow-lg p-6 backdrop-blur-sm">
+                  <div className="bg-white dark:bg-fidcent-navy/90 rounded-xl shadow-lg p-6 backdrop-blur-sm border border-gray-100 dark:border-gray-800/20">
                     <div className="flex items-center gap-3 border-b border-gray-100 dark:border-gray-700 pb-4 mb-4">
                       <div className="flex space-x-1.5">
                         <div className="w-3 h-3 rounded-full bg-red-500"></div>
                         <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                         <div className="w-3 h-3 rounded-full bg-green-500"></div>
                       </div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400">code.fidcent.tech</div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">code.fidcenttech.com</div>
                     </div>
                     <div className="space-y-2 font-mono text-sm">
                       <div className="text-gray-400 dark:text-gray-500">// Fidcent Tech solutions</div>
