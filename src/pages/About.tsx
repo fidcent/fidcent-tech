@@ -8,8 +8,9 @@ const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO 
-        title="About Us" 
-        description="Learn about Fidcent - a premier software development company committed to innovation, customer centricity, and delivering exceptional digital solutions." 
+        title="About Us | Fidcent Tech" 
+        description="Learn about Fidcent Tech - a premier technology company committed to innovation, customer centricity, and delivering exceptional digital solutions." 
+        keywords="Fidcent Tech, about Fidcent Tech, tech company Nigeria, software development company, technology innovation, tech team, software engineering team"
       />
       <Navbar />
       <AboutSection />

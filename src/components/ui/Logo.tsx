@@ -11,7 +11,10 @@ export const Logo = ({ className }: LogoProps) => {
       <div className="gradient-bg w-8 h-8 rounded-lg flex items-center justify-center">
         <div className="w-4 h-4 bg-white rounded-sm" />
       </div>
-      <span className="text-2xl font-bold">Fidcent</span>
+      <div className="flex flex-col items-start">
+        <span className="text-2xl font-bold">Fidcent Tech</span>
+        <span className="text-xs opacity-70">Innovative Solutions</span>
+      </div>
     </div>
   );
 };

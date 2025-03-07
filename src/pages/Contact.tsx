@@ -8,8 +8,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEO 
-        title="Contact Us" 
-        description="Get in touch with Fidcent for your software development needs. We're ready to help transform your business with innovative digital solutions." 
+        title="Contact Us | Fidcent Tech" 
+        description="Get in touch with Fidcent Tech for your technology and software development needs. We're ready to help transform your business with innovative digital solutions." 
+        keywords="contact Fidcent Tech, technology consultancy, software development contact, tech solutions Nigeria, hire developers, tech project consultation"
       />
       <Navbar />
       <ContactSection />
