@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <Logo className="text-white" />
             <p className="text-gray-300 mt-4">
-              Empowering businesses through innovative and scalable technology solutions.
+              Empowering businesses through innovative and scalable technology solutions. A division of Fidcent Group.
             </p>
             <div className="flex space-x-4 mt-4">
               <a href="https://linkedin.com/in/fidcenttech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-fidcent-green transition-colors">
@@ -48,11 +48,11 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
                 <ChevronRight className="w-4 h-4 text-fidcent-green" />
-                <Link to="/services#ai">AI & Machine Learning</Link>
+                <Link to="/services#networking">Networking Solutions</Link>
               </li>
               <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
                 <ChevronRight className="w-4 h-4 text-fidcent-green" />
-                <Link to="/services#iot">IoT Development</Link>
+                <Link to="/services#security">CCTV & Security Systems</Link>
               </li>
             </ul>
           </div>
@@ -102,7 +102,7 @@ export const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Fidcent Tech. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Fidcent Tech - A division of Fidcent Group. All rights reserved.</p>
         </div>
       </div>
     </footer>

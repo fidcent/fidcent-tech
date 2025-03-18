@@ -1,21 +1,26 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Code2, Command, Database, FileJson, Github, Layers, Lock, PackageOpen, Server, Smartphone } from "lucide-react";
+import { ArrowRight, CheckCircle2, Code2, Command, Database, FileJson, Github, Layers, Lock, 
+  PackageOpen, Server, Smartphone, Coffee, Globe, Cpu, Cloud, Settings, Activity, Monitor } from "lucide-react";
 
 export const Hero = () => {
-  // Changed from services to actual technologies
+  // Updated with technologies from the resume
   const techStack = [
-    { name: "React", icon: Code2 },
-    { name: "Node.js", icon: Server },
+    { name: "Java", icon: Coffee },
+    { name: "Spring Boot", icon: Layers },
     { name: "TypeScript", icon: FileJson },
-    { name: "Flutter", icon: Smartphone },
-    { name: "Python", icon: Command },
-    { name: "AWS", icon: Layers },
+    { name: "JavaScript", icon: Code2 },
+    { name: "Node.js", icon: Server },
+    { name: "ReactJS", icon: Globe },
+    { name: "React Native", icon: Smartphone },
     { name: "MongoDB", icon: Database },
-    { name: "GraphQL", icon: PackageOpen },
+    { name: "MySQL", icon: Database },
+    { name: "Kubernetes", icon: Settings },
     { name: "Docker", icon: Github },
-    { name: "OAuth", icon: Lock },
+    { name: "DevOps", icon: Activity },
+    { name: "Cloud", icon: Cloud },
+    { name: "CSS/SCSS", icon: Monitor },
   ];
 
   return (
@@ -43,7 +48,7 @@ export const Hero = () => {
                 <span className="gradient-text">Transforming</span> Ideas into Digital Reality
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                Fidcent Tech delivers cutting-edge software solutions that enhance growth, efficiency, and competitive advantage for businesses worldwide.
+                Fidcent Tech, a division of Fidcent Group, delivers cutting-edge software solutions, networking, and CCTV installation services that enhance growth, efficiency, and competitive advantage for businesses worldwide.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact">
@@ -59,7 +64,7 @@ export const Hero = () => {
                 </Link>
               </div>
               
-              {/* Tech stack logos - Updated to show actual technologies */}
+              {/* Tech stack logos - Updated to show actual technologies from resume */}
               <div className="pt-8">
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Technologies we work with</p>
                 <div className="flex flex-wrap gap-3">

@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { CheckIcon, CodeIcon, CloudIcon, SmartphoneIcon, ServerIcon, CpuIcon } from "lucide-react";
+import { CheckIcon, CodeIcon, CloudIcon, SmartphoneIcon, ServerIcon, CpuIcon, MonitorIcon, ShieldIcon } from "lucide-react";
 
 export const ServicesSection = () => {
   const services = [
@@ -24,7 +24,7 @@ export const ServicesSection = () => {
       icon: SmartphoneIcon,
       features: [
         "iOS and Android native apps",
-        "Cross-platform development",
+        "Cross-platform development (React Native)",
         "UI/UX design for mobile",
         "Mobile app testing",
         "App store submission and maintenance"
@@ -33,7 +33,7 @@ export const ServicesSection = () => {
     {
       id: "web",
       title: "Web Development",
-      description: "Responsive and dynamic web applications including e-commerce solutions, CMS, and custom web portals.",
+      description: "Responsive and dynamic web applications including e-commerce solutions, CMS, and custom web portals using React, TypeScript, and more.",
       icon: ServerIcon,
       features: [
         "Responsive web design",
@@ -46,7 +46,7 @@ export const ServicesSection = () => {
     {
       id: "cloud",
       title: "Cloud Solutions",
-      description: "Cloud migration, integration, and management with scalable and secure cloud infrastructure solutions.",
+      description: "Cloud migration, integration, and management with scalable and secure cloud infrastructure solutions using Docker, Kubernetes, and more.",
       icon: CloudIcon,
       features: [
         "Cloud migration strategies",
@@ -81,6 +81,32 @@ export const ServicesSection = () => {
         "Smart home/office solutions",
         "Industrial IoT applications"
       ]
+    },
+    {
+      id: "networking",
+      title: "Networking Solutions",
+      description: "Comprehensive networking services including infrastructure setup, maintenance, and optimization for businesses of all sizes.",
+      icon: MonitorIcon,
+      features: [
+        "Network design and implementation",
+        "Network security solutions",
+        "Wireless network setup",
+        "Network maintenance and troubleshooting",
+        "Network performance optimization"
+      ]
+    },
+    {
+      id: "security",
+      title: "CCTV & Security Systems",
+      description: "End-to-end security solutions including CCTV installation, access control systems, and integrated security management.",
+      icon: ShieldIcon,
+      features: [
+        "CCTV system design and installation",
+        "Access control systems",
+        "Intrusion detection systems",
+        "Security system integration",
+        "24/7 monitoring solutions"
+      ]
     }
   ];
 
@@ -90,7 +116,7 @@ export const ServicesSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Our Services</h1>
           <p className="text-xl text-gray-600">
-            We deliver cutting-edge software solutions that enhance growth, efficiency, and competitive advantage.
+            Fidcent Tech, a division of Fidcent Group, delivers cutting-edge software solutions, networking, and security systems that enhance growth, efficiency, and competitive advantage.
           </p>
         </div>
 
