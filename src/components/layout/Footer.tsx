@@ -2,7 +2,7 @@
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ChevronRight, Linkedin, Facebook, Twitter, Mail, Phone, CheckCircle, MapPin, ArrowUpRight } from "lucide-react";
+import { Linkedin, Facebook, Twitter, Mail, Phone, CheckCircle, MapPin, ArrowUpRight } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -50,28 +50,22 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-fidcent-navy dark:text-white">Services</h3>
             <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/services#software">Custom Software Development</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/services#mobile">Mobile App Development</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/services#web">Web Development</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/services#cloud">Cloud Solutions</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/services#networking">Networking Solutions</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/services#security">CCTV & Security Systems</Link>
               </li>
             </ul>
@@ -80,24 +74,19 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 text-fidcent-navy dark:text-white">Company</h3>
             <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/about">About Us</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/about#values">Our Values</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/about#team">Our Team</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/careers">Careers</Link>
               </li>
-              <li className="flex items-center gap-1 hover:text-fidcent-green transition-colors">
-                <ChevronRight className="w-4 h-4 text-fidcent-green" />
+              <li className="hover:text-fidcent-green transition-colors">
                 <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
