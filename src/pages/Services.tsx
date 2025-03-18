@@ -6,7 +6,7 @@ import { SEO } from "@/components/shared/SEO";
 
 const Services = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-blue-50/50 dark:bg-gray-950">
       <SEO 
         title="Our Services | Fidcent Tech | Part of Fidcent Group" 
         description="Explore Fidcent Tech's comprehensive range of technology services including custom software, mobile apps, web development, networking, CCTV installation, cloud solutions, AI & ML, and IoT. Part of Fidcent Group providing complete IT solutions." 

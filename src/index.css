@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -75,6 +75,18 @@
   }
 
   .glass-card {
-    @apply backdrop-blur-xl bg-white/90 dark:bg-black/60 border border-white/20 shadow-lg;
+    @apply backdrop-blur-xl bg-white/95 dark:bg-black/60 border border-gray-100/50 dark:border-white/10 shadow-xl;
+  }
+  
+  .soft-shadow {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  }
+  
+  .light-card {
+    @apply bg-white border border-gray-100 shadow-sm rounded-xl dark:bg-fidcent-navy/80 dark:border-gray-800/30;
+  }
+  
+  .hover-card {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
   }
 }
