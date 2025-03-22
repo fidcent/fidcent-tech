@@ -54,9 +54,10 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				fidcent: {
-					green: '#0BF862',
-					blue: '#0C2DF6',
+					green: '#00e676',
+					blue: '#304ffe',
 					navy: '#030921',
+					teal: '#00bcd4',
 				},
 			},
 			borderRadius: {
