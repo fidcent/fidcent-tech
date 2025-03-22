@@ -1,4 +1,3 @@
-
 import { Logo } from "@/components/ui/Logo";
 import { Link } from "react-router-dom";
 import { Linkedin, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
@@ -13,7 +12,10 @@ export const Footer = () => {
           <div className="space-y-4">
             <Logo className="text-fidcent-navy dark:text-white" />
             <p className="text-gray-600 dark:text-gray-300 mt-4">
-              Empowering businesses through innovative and scalable technology solutions. A division of Fidcent Group.
+              Empowering businesses through innovative and scalable technology solutions. A division of <a href="https://fidcent.com" target="_blank" rel="noopener noreferrer" className="text-fidcent-green hover:underline">Fidcent Group</a>.
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              RC 7718433
             </p>
             <div className="flex space-x-4 mt-4">
               <a 
@@ -110,7 +112,7 @@ export const Footer = () => {
               
               <p className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-fidcent-green flex-shrink-0" />
-                <a href="mailto:tech@fidcent.com" className="hover:text-fidcent-green transition-colors">tech@fidcent.com</a>
+                <a href="mailto:info@tech.fidcent.com" className="hover:text-fidcent-green transition-colors">info@tech.fidcent.com</a>
               </p>
             </address>
           </div>

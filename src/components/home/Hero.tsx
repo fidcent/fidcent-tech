@@ -1,11 +1,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Code2, Command, Database, FileJson, Github, Layers, Lock, 
+import { ArrowRight, Code2, Command, Database, FileJson, Github, Layers, Lock, 
   PackageOpen, Server, Smartphone, Coffee, Globe, Cpu, Cloud, Settings, Activity, Monitor } from "lucide-react";
 
 export const Hero = () => {
-  // Updated with technologies from the resume
+  // Updated with refined technologies
   const techStack = [
     { name: "Java", icon: Coffee },
     { name: "Spring Boot", icon: Layers },
@@ -17,10 +17,10 @@ export const Hero = () => {
     { name: "MongoDB", icon: Database },
     { name: "MySQL", icon: Database },
     { name: "Kubernetes", icon: Settings },
-    { name: "Docker", icon: Github },
-    { name: "DevOps", icon: Activity },
-    { name: "Cloud", icon: Cloud },
-    { name: "CSS/SCSS", icon: Monitor },
+    { name: "Docker", icon: PackageOpen },
+    { name: "CI/CD", icon: Activity },
+    { name: "Cloud Services", icon: Cloud },
+    { name: "UI/UX Design", icon: Monitor },
   ];
 
   return (

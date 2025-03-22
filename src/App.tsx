@@ -1,42 +1,36 @@
 
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
-import Index from "./pages/Index";
-import Services from "./pages/Services";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Careers from "./pages/Careers";
-import NotFound from "./pages/NotFound";
+import { Toaster } from "@/components/ui/toaster";
+import Index from "@/pages/Index";
+import About from "@/pages/About";
+import Services from "@/pages/Services";
+import Contact from "@/pages/Contact";
+import Careers from "@/pages/Careers";
+import NotFound from "@/pages/NotFound";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import Terms from "@/pages/Terms";
+import "./App.css";
+import { HelmetProvider } from "react-helmet-async";
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+function App() {
+  return (
     <HelmetProvider>
-      <ThemeProvider defaultTheme="system">
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/careers" element={<Careers />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
+      <ThemeProvider defaultTheme="light" storageKey="fidcent-tech-theme">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Toaster />
       </ThemeProvider>
     </HelmetProvider>
-  </QueryClientProvider>
-);
+  );
+}
 
 export default App;
