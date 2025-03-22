@@ -1,8 +1,7 @@
 
 import { Logo } from "@/components/ui/Logo";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Linkedin, Facebook, Twitter, Mail, Phone, CheckCircle, MapPin, ArrowUpRight } from "lucide-react";
+import { Linkedin, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -92,7 +91,7 @@ export const Footer = () => {
             </ul>
           </div>
           
-          <div className="bg-white dark:bg-fidcent-navy/40 p-5 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800/20">
+          <div>
             <h3 className="text-lg font-bold mb-4 text-fidcent-navy dark:text-white">Contact</h3>
             <address className="not-italic text-gray-600 dark:text-gray-300 space-y-3">
               <div className="flex items-start gap-2">
@@ -114,12 +113,6 @@ export const Footer = () => {
                 <a href="mailto:tech@fidcent.com" className="hover:text-fidcent-green transition-colors">tech@fidcent.com</a>
               </p>
             </address>
-            
-            <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700/30">
-              <Link to="/contact" className="inline-flex items-center gap-1 text-fidcent-green hover:underline">
-                Get in touch <ArrowUpRight className="w-3.5 h-3.5" />
-              </Link>
-            </div>
           </div>
         </div>
         

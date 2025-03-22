@@ -11,6 +11,7 @@ const Index = () => {
         title="Fidcent Tech - Innovative Software Solutions | Part of Fidcent Group"
         description="Transforming businesses through innovative technology solutions. Fidcent Tech, a division of Fidcent Group, specializes in custom software development, mobile apps, web development, networking, CCTV installation, cloud solutions, AI, and IoT."
         keywords="Fidcent Tech, Fidcent Group, tech solutions, software development, digital transformation, custom software, mobile apps, web development, cloud solutions, AI development, IoT solutions, networking solutions, CCTV installation, security systems, IT consulting, Java, Spring Boot, React, TypeScript, Node.js, MongoDB, DevOps, Nigeria tech company"
+        ogImage="/public/lovable-uploads/b57cfb44-95d1-4607-9eb5-de1b5a19c1e8.png"
       />
       <Navbar />
       <Hero />
