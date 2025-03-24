@@ -11,7 +11,7 @@ export const Logo = ({ className }: LogoProps) => {
     <Link to="/" className={cn("flex items-center space-x-2", className)}>
       <div className="h-10 w-10 flex items-center justify-center">
         <img 
-          src="/public/lovable-uploads/5cfbfd0b-820f-404a-9977-7a3da8ea7bbd.png" 
+          src="/lovable-uploads/5cfbfd0b-820f-404a-9977-7a3da8ea7bbd.png" 
           alt="Fidcent Logo" 
           className="w-full h-full object-contain"
         />

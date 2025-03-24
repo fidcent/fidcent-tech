@@ -1,3 +1,4 @@
+
 import { Logo } from "@/components/ui/Logo";
 import { Link } from "react-router-dom";
 import { Linkedin, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
@@ -8,14 +9,17 @@ export const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-fidcent-navy dark:to-[#020617] text-gray-700 dark:text-white py-16 mt-auto border-t border-gray-200 dark:border-gray-800/30">
       <div className="container mx-auto px-4">
+        <div className="flex justify-end mb-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            RC 7718433
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Logo className="text-fidcent-navy dark:text-white" />
             <p className="text-gray-600 dark:text-gray-300 mt-4">
               Empowering businesses through innovative and scalable technology solutions. A division of <a href="https://fidcent.com" target="_blank" rel="noopener noreferrer" className="text-fidcent-green hover:underline">Fidcent Group</a>.
-            </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              RC 7718433
             </p>
             <div className="flex space-x-4 mt-4">
               <a 
@@ -95,7 +99,7 @@ export const Footer = () => {
           
           <div>
             <h3 className="text-lg font-bold mb-4 text-fidcent-navy dark:text-white">Contact</h3>
-            <address className="not-italic text-gray-600 dark:text-gray-300 space-y-3">
+            <div className="text-gray-600 dark:text-gray-300 space-y-3">
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 text-fidcent-green flex-shrink-0" />
                 <div>
@@ -114,7 +118,7 @@ export const Footer = () => {
                 <Mail className="w-5 h-5 text-fidcent-green flex-shrink-0" />
                 <a href="mailto:info@tech.fidcent.com" className="hover:text-fidcent-green transition-colors">info@tech.fidcent.com</a>
               </p>
-            </address>
+            </div>
           </div>
         </div>
         
