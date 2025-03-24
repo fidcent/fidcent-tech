@@ -27,7 +27,9 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        isScrolled ? "bg-white/80 dark:bg-fidcent-navy/80 backdrop-blur-lg shadow-sm" : "bg-transparent"
+        isScrolled 
+          ? "bg-white/90 dark:bg-fidcent-navy/90 backdrop-blur-lg shadow-sm border-b border-gray-200/50 dark:border-gray-800/30" 
+          : "bg-transparent"
       )}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
@@ -66,33 +68,33 @@ export const Navbar = () => {
           </Link>
         </div>
         
-        {/* Mobile menu */}
+        {/* Mobile menu - Improved for light mode */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-white dark:bg-fidcent-navy shadow-lg p-4 flex flex-col space-y-4">
+          <div className="md:hidden absolute top-20 left-0 right-0 bg-white/95 dark:bg-fidcent-navy shadow-lg p-4 flex flex-col space-y-4 border-b border-gray-200 dark:border-gray-800 backdrop-blur-sm">
             <Link 
               to="/services" 
-              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2"
+              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
               onClick={() => setMobileMenuOpen(false)}
             >
               Services
             </Link>
             <Link 
               to="/about" 
-              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2"
+              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link 
               to="/careers" 
-              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2"
+              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
               onClick={() => setMobileMenuOpen(false)}
             >
               Careers
             </Link>
             <Link 
               to="/contact" 
-              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2"
+              className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
