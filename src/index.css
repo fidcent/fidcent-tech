@@ -89,4 +89,17 @@
   .hover-card {
     @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
   }
+
+  /* Light mode improvements */
+  .light-gradient-bg {
+    @apply bg-gradient-to-br from-blue-50 via-white to-gray-50;
+  }
+  
+  .light-glass-card {
+    @apply bg-white/90 backdrop-blur-sm border border-gray-100 shadow-sm;
+  }
+  
+  .soft-accent {
+    @apply bg-fidcent-green/5 border border-fidcent-green/10;
+  }
 }
