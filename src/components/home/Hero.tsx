@@ -8,22 +8,92 @@ import { useIsMobile } from "@/hooks/use-mobile";
 export const Hero = () => {
   const isMobile = useIsMobile();
   
-  // Updated with refined technologies
+  // Updated with refined technologies and descriptions
   const techStack = [
-    { name: "Java", icon: Coffee },
-    { name: "Spring Boot", icon: Layers },
-    { name: "TypeScript", icon: FileJson },
-    { name: "JavaScript", icon: Code2 },
-    { name: "Node.js", icon: Server },
-    { name: "ReactJS", icon: Globe },
-    { name: "React Native", icon: Smartphone },
-    { name: "MongoDB", icon: Database },
-    { name: "MySQL", icon: Database },
-    { name: "Kubernetes", icon: Settings },
-    { name: "Docker", icon: Command },
-    { name: "CI/CD", icon: Activity },
-    { name: "Cloud Services", icon: Cloud },
-    { name: "UI/UX Design", icon: Monitor },
+    { 
+      name: "Java", 
+      icon: Coffee, 
+      type: "technology", 
+      description: "Programming language" 
+    },
+    { 
+      name: "Spring Boot", 
+      icon: Layers, 
+      type: "framework", 
+      description: "Framework for Java" 
+    },
+    { 
+      name: "TypeScript", 
+      icon: FileJson, 
+      type: "technology", 
+      description: "Superset of JavaScript" 
+    },
+    { 
+      name: "JavaScript", 
+      icon: Code2, 
+      type: "technology", 
+      description: "Programming language" 
+    },
+    { 
+      name: "Node.js", 
+      icon: Server, 
+      type: "technology", 
+      description: "Runtime for JavaScript" 
+    },
+    { 
+      name: "ReactJS", 
+      icon: Globe, 
+      type: "technology", 
+      description: "UI library" 
+    },
+    { 
+      name: "React Native", 
+      icon: Smartphone, 
+      type: "framework", 
+      description: "Mobile app framework" 
+    },
+    { 
+      name: "MongoDB", 
+      icon: Database, 
+      type: "technology", 
+      description: "NoSQL database" 
+    },
+    { 
+      name: "MySQL", 
+      icon: Database, 
+      type: "technology", 
+      description: "Relational database" 
+    },
+    { 
+      name: "Kubernetes", 
+      icon: Settings, 
+      type: "technology", 
+      description: "Container orchestration" 
+    },
+    { 
+      name: "Docker", 
+      icon: Command, 
+      type: "technology", 
+      description: "Containerization platform" 
+    },
+    { 
+      name: "CI/CD", 
+      icon: Activity, 
+      type: "concept", 
+      description: "Integration & deployment methodology" 
+    },
+    { 
+      name: "Cloud Services", 
+      icon: Cloud, 
+      type: "concept", 
+      description: "AWS, Azure, Google Cloud" 
+    },
+    { 
+      name: "UI/UX Design", 
+      icon: Monitor, 
+      type: "concept", 
+      description: "Design discipline" 
+    },
   ];
 
   return (
@@ -48,6 +118,9 @@ export const Hero = () => {
                 <span className="inline-block px-4 py-2 rounded-full bg-fidcent-green/10 text-fidcent-green font-medium text-sm border border-fidcent-green/20">
                   Innovative Technology Solutions
                 </span>
+                <span className="text-xs font-medium text-gray-600 dark:text-gray-400 inline-flex items-center">
+                  RC 7718433
+                </span>
               </div>
               <h1 className="text-4xl md:text-7xl font-bold leading-tight text-fidcent-navy dark:text-white">
                 <span className="gradient-text">Transforming</span> Ideas into Digital Reality
@@ -69,13 +142,24 @@ export const Hero = () => {
                 </Link>
               </div>
               
-              {/* Tech stack logos - Updated for better light mode */}
+              {/* Tech stack section with updated descriptions */}
               <div className="pt-8">
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Technologies we work with</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Technologies & Concepts We Work With</p>
                 <div className="flex flex-wrap gap-3">
                   {techStack.slice(0, isMobile ? 6 : techStack.length).map((tech, idx) => (
-                    <div key={idx} className="flex items-center gap-2 px-3 py-2 rounded-full bg-white dark:bg-fidcent-navy/80 shadow-sm border border-gray-200 dark:border-gray-800 hover:border-fidcent-green hover:shadow-md transition-all duration-300">
-                      <tech.icon size={16} className="text-fidcent-green" />
+                    <div 
+                      key={idx} 
+                      className={cn(
+                        "flex items-center gap-2 px-3 py-2 rounded-full bg-white dark:bg-fidcent-navy/80 shadow-sm border hover:shadow-md transition-all duration-300",
+                        tech.type === "technology" ? "border-fidcent-green/20" : 
+                        tech.type === "framework" ? "border-fidcent-blue/20" : "border-gray-200 dark:border-gray-800"
+                      )}
+                      title={`${tech.name}: ${tech.description}`}
+                    >
+                      <tech.icon size={16} className={cn(
+                        tech.type === "technology" ? "text-fidcent-green" :
+                        tech.type === "framework" ? "text-fidcent-blue" : "text-gray-500"
+                      )} />
                       <span className="text-sm font-medium">{tech.name}</span>
                     </div>
                   ))}

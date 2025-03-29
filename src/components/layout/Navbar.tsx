@@ -48,10 +48,11 @@ export const Navbar = () => {
         
         {/* Mobile menu button */}
         <div className="flex items-center md:hidden">
-          <div className="mr-4 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
+          <div className="mr-2 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
             RC 7718433
           </div>
-          <button onClick={toggleMobileMenu}>
+          <ThemeToggle />
+          <button onClick={toggleMobileMenu} className="ml-2">
             {mobileMenuOpen ? (
               <X className="h-6 w-6" />
             ) : (
@@ -61,7 +62,7 @@ export const Navbar = () => {
         </div>
         
         {/* Desktop navigation */}
-        <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
+        <div className="hidden md:flex items-center space-x-3 lg:space-x-8">
           <Link to="/services" className="text-sm font-medium hover:text-fidcent-green transition-colors">
             Services
           </Link>
@@ -113,10 +114,9 @@ export const Navbar = () => {
             >
               Contact
             </Link>
-            <div className="flex justify-between items-center">
-              <ThemeToggle />
+            <div>
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="gradient-bg text-white hover:opacity-90 transition-opacity">
+                <Button className="w-full gradient-bg text-white hover:opacity-90 transition-opacity">
                   Get Started
                 </Button>
               </Link>
