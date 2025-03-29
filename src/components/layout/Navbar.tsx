@@ -48,11 +48,12 @@ export const Navbar = () => {
         
         {/* Mobile menu button */}
         <div className="flex items-center md:hidden">
-          <div className="mr-2 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
-            RC 7718433
-          </div>
           <ThemeToggle />
-          <button onClick={toggleMobileMenu} className="ml-2">
+          <button 
+            onClick={toggleMobileMenu} 
+            className="ml-2 p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            aria-label="Toggle mobile menu"
+          >
             {mobileMenuOpen ? (
               <X className="h-6 w-6" />
             ) : (
@@ -62,7 +63,7 @@ export const Navbar = () => {
         </div>
         
         {/* Desktop navigation */}
-        <div className="hidden md:flex items-center space-x-3 lg:space-x-8">
+        <div className="hidden md:flex items-center space-x-3 lg:space-x-6">
           <Link to="/services" className="text-sm font-medium hover:text-fidcent-green transition-colors">
             Services
           </Link>
@@ -86,6 +87,9 @@ export const Navbar = () => {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-20 left-0 right-0 bg-white/95 dark:bg-fidcent-navy shadow-lg p-4 flex flex-col space-y-4 border-b border-gray-200 dark:border-gray-800 backdrop-blur-sm">
+            <div className="mb-2 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md w-fit">
+              RC 7718433
+            </div>
             <Link 
               to="/services" 
               className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
@@ -114,7 +118,7 @@ export const Navbar = () => {
             >
               Contact
             </Link>
-            <div>
+            <div className="pt-2">
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full gradient-bg text-white hover:opacity-90 transition-opacity">
                   Get Started
