@@ -1,10 +1,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Code2, Command, Database, FileJson, Github, Layers, Lock, 
-  PackageOpen, Server, Smartphone, Coffee, Globe, Cpu, Cloud, Settings, Activity, Monitor } from "lucide-react";
+import { ArrowRight, Coffee, Code2, Command, Database, FileJson, 
+  Globe, Layers, Monitor, Smartphone, Server, Cloud, Settings, Activity } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Hero = () => {
+  const isMobile = useIsMobile();
+  
   // Updated with refined technologies
   const techStack = [
     { name: "Java", icon: Coffee },
@@ -17,7 +20,7 @@ export const Hero = () => {
     { name: "MongoDB", icon: Database },
     { name: "MySQL", icon: Database },
     { name: "Kubernetes", icon: Settings },
-    { name: "Docker", icon: PackageOpen },
+    { name: "Docker", icon: Command },
     { name: "CI/CD", icon: Activity },
     { name: "Cloud Services", icon: Cloud },
     { name: "UI/UX Design", icon: Monitor },
@@ -45,14 +48,11 @@ export const Hero = () => {
                 <span className="inline-block px-4 py-2 rounded-full bg-fidcent-green/10 text-fidcent-green font-medium text-sm border border-fidcent-green/20">
                   Innovative Technology Solutions
                 </span>
-                <span className="text-sm font-medium text-gray-600 dark:text-gray-400 ml-2">
-                  RC 7718433
-                </span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight text-fidcent-navy dark:text-white">
+              <h1 className="text-4xl md:text-7xl font-bold leading-tight text-fidcent-navy dark:text-white">
                 <span className="gradient-text">Transforming</span> Ideas into Digital Reality
               </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300">
+              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300">
                 Fidcent Tech, a division of Fidcent Group, delivers cutting-edge software solutions, networking, and CCTV installation services that enhance growth, efficiency, and competitive advantage for businesses worldwide.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -73,7 +73,7 @@ export const Hero = () => {
               <div className="pt-8">
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Technologies we work with</p>
                 <div className="flex flex-wrap gap-3">
-                  {techStack.map((tech, idx) => (
+                  {techStack.slice(0, isMobile ? 6 : techStack.length).map((tech, idx) => (
                     <div key={idx} className="flex items-center gap-2 px-3 py-2 rounded-full bg-white dark:bg-fidcent-navy/80 shadow-sm border border-gray-200 dark:border-gray-800 hover:border-fidcent-green hover:shadow-md transition-all duration-300">
                       <tech.icon size={16} className="text-fidcent-green" />
                       <span className="text-sm font-medium">{tech.name}</span>
@@ -83,33 +83,36 @@ export const Hero = () => {
               </div>
             </div>
             
-            <div className="glass-card rounded-2xl overflow-hidden shadow-xl animate-fade-in-up border border-gray-200 dark:border-gray-800/20 soft-shadow">
-              <div className="relative aspect-[4/3] bg-gradient-to-br from-fidcent-green/10 to-fidcent-blue/10 p-8 flex items-center justify-center">
-                <div className="absolute w-24 h-24 bg-fidcent-green/15 rounded-full top-12 left-12 filter blur-xl"></div>
-                <div className="absolute w-32 h-32 bg-fidcent-blue/15 rounded-full bottom-12 right-12 filter blur-xl"></div>
-                
-                <div className="relative z-10 w-full max-w-md">
-                  <div className="bg-white/90 dark:bg-fidcent-navy/90 rounded-xl shadow-lg p-6 backdrop-blur-sm border border-gray-200 dark:border-gray-800/20">
-                    <div className="flex items-center gap-3 border-b border-gray-200 dark:border-gray-700 pb-4 mb-4">
-                      <div className="flex space-x-1.5">
-                        <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            {/* Hide the code illustration on mobile */}
+            {!isMobile && (
+              <div className="glass-card rounded-2xl overflow-hidden shadow-xl animate-fade-in-up border border-gray-200 dark:border-gray-800/20 soft-shadow">
+                <div className="relative aspect-[4/3] bg-gradient-to-br from-fidcent-green/10 to-fidcent-blue/10 p-8 flex items-center justify-center">
+                  <div className="absolute w-24 h-24 bg-fidcent-green/15 rounded-full top-12 left-12 filter blur-xl"></div>
+                  <div className="absolute w-32 h-32 bg-fidcent-blue/15 rounded-full bottom-12 right-12 filter blur-xl"></div>
+                  
+                  <div className="relative z-10 w-full max-w-md">
+                    <div className="bg-white/90 dark:bg-fidcent-navy/90 rounded-xl shadow-lg p-6 backdrop-blur-sm border border-gray-200 dark:border-gray-800/20">
+                      <div className="flex items-center gap-3 border-b border-gray-200 dark:border-gray-700 pb-4 mb-4">
+                        <div className="flex space-x-1.5">
+                          <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                          <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <div className="text-xs text-gray-600 dark:text-gray-400">code.fidcenttech.com</div>
                       </div>
-                      <div className="text-xs text-gray-600 dark:text-gray-400">code.fidcenttech.com</div>
-                    </div>
-                    <div className="space-y-2 font-mono text-sm">
-                      <div className="text-gray-500 dark:text-gray-500">// Fidcent Tech solutions</div>
-                      <div><span className="text-purple-700 dark:text-purple-400">const</span> <span className="text-blue-700 dark:text-blue-400">result</span> = <span className="text-orange-700 dark:text-orange-400">await</span> <span className="text-green-700 dark:text-green-500">FidcentTech</span>.<span className="text-blue-700 dark:text-blue-400">solve</span>(yourChallenge);</div>
-                      <div className="text-gray-500 dark:text-gray-500">// Transforming businesses with technology</div>
-                      <div><span className="text-red-700 dark:text-red-400">if</span> (result.<span className="text-blue-700 dark:text-blue-400">isSuccessful</span>) {"{"}</div>
-                      <div className="pl-4"><span className="text-purple-700 dark:text-purple-400">return</span> <span className="text-green-700 dark:text-green-500">"Innovation delivered!"</span>;</div>
-                      <div>{"}"}</div>
+                      <div className="space-y-2 font-mono text-sm">
+                        <div className="text-gray-500 dark:text-gray-500">// Fidcent Tech solutions</div>
+                        <div><span className="text-purple-700 dark:text-purple-400">const</span> <span className="text-blue-700 dark:text-blue-400">result</span> = <span className="text-orange-700 dark:text-orange-400">await</span> <span className="text-green-700 dark:text-green-500">FidcentTech</span>.<span className="text-blue-700 dark:text-blue-400">solve</span>(yourChallenge);</div>
+                        <div className="text-gray-500 dark:text-gray-500">// Transforming businesses with technology</div>
+                        <div><span className="text-red-700 dark:text-red-400">if</span> (result.<span className="text-blue-700 dark:text-blue-400">isSuccessful</span>) {"{"}</div>
+                        <div className="pl-4"><span className="text-purple-700 dark:text-purple-400">return</span> <span className="text-green-700 dark:text-green-500">"Innovation delivered!"</span>;</div>
+                        <div>{"}"}</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>

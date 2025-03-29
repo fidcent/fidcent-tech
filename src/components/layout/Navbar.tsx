@@ -6,10 +6,12 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,9 +35,16 @@ export const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link to="/">
-          <Logo />
-        </Link>
+        <div className="flex items-center">
+          <Link to="/">
+            <Logo />
+          </Link>
+          {!isMobile && (
+            <span className="ml-4 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
+              RC 7718433
+            </span>
+          )}
+        </div>
         
         {/* Mobile menu button */}
         <button className="md:hidden" onClick={toggleMobileMenu}>
@@ -71,6 +80,11 @@ export const Navbar = () => {
         {/* Mobile menu - Improved for light mode */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-20 left-0 right-0 bg-white/95 dark:bg-fidcent-navy shadow-lg p-4 flex flex-col space-y-4 border-b border-gray-200 dark:border-gray-800 backdrop-blur-sm">
+            <div className="flex justify-between items-center mb-2">
+              <span className="text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
+                RC 7718433
+              </span>
+            </div>
             <Link 
               to="/services" 
               className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
