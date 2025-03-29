@@ -35,28 +35,33 @@ export const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <div className="flex items-center">
+        <div className="flex items-center gap-2">
           <Link to="/">
             <Logo />
           </Link>
           {!isMobile && (
-            <span className="ml-4 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
+            <div className="ml-4 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
               RC 7718433
-            </span>
+            </div>
           )}
         </div>
         
         {/* Mobile menu button */}
-        <button className="md:hidden" onClick={toggleMobileMenu}>
-          {mobileMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
+        <div className="flex items-center md:hidden">
+          <div className="mr-4 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
+            RC 7718433
+          </div>
+          <button onClick={toggleMobileMenu}>
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </div>
         
         {/* Desktop navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
           <Link to="/services" className="text-sm font-medium hover:text-fidcent-green transition-colors">
             Services
           </Link>
@@ -77,14 +82,9 @@ export const Navbar = () => {
           </Link>
         </div>
         
-        {/* Mobile menu - Improved for light mode */}
+        {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-20 left-0 right-0 bg-white/95 dark:bg-fidcent-navy shadow-lg p-4 flex flex-col space-y-4 border-b border-gray-200 dark:border-gray-800 backdrop-blur-sm">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
-                RC 7718433
-              </span>
-            </div>
             <Link 
               to="/services" 
               className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
