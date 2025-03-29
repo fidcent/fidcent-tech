@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Coffee, Code2, Command, Database, FileJson, 
   Globe, Layers, Monitor, Smartphone, Server, Cloud, Settings, Activity } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { cn } from "@/lib/utils";
 
 export const Hero = () => {
   const isMobile = useIsMobile();
