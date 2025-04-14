@@ -39,19 +39,14 @@ export const Navbar = () => {
           <Link to="/">
             <Logo />
           </Link>
-          {!isMobile && (
-            <div className="ml-4 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md">
-              RC 7718433
-            </div>
-          )}
         </div>
         
         {/* Mobile menu button */}
-        <div className="flex items-center md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <button 
             onClick={toggleMobileMenu} 
-            className="ml-2 p-1.5 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+            className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
             aria-label="Toggle mobile menu"
           >
             {mobileMenuOpen ? (
@@ -63,7 +58,7 @@ export const Navbar = () => {
         </div>
         
         {/* Desktop navigation */}
-        <div className="hidden md:flex items-center space-x-3 lg:space-x-6">
+        <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
           <Link to="/services" className="text-sm font-medium hover:text-fidcent-green transition-colors">
             Services
           </Link>
@@ -78,7 +73,7 @@ export const Navbar = () => {
           </Link>
           <ThemeToggle />
           <Link to="/contact">
-            <Button className="gradient-bg text-white hover:opacity-90 transition-opacity">
+            <Button size="sm" className="gradient-bg text-white hover:opacity-90 transition-opacity">
               Get Started
             </Button>
           </Link>
@@ -87,9 +82,6 @@ export const Navbar = () => {
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-20 left-0 right-0 bg-white/95 dark:bg-fidcent-navy shadow-lg p-4 flex flex-col space-y-4 border-b border-gray-200 dark:border-gray-800 backdrop-blur-sm">
-            <div className="mb-2 text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded-md w-fit">
-              RC 7718433
-            </div>
             <Link 
               to="/services" 
               className="text-sm font-medium hover:text-fidcent-green transition-colors p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800/50"
@@ -118,7 +110,7 @@ export const Navbar = () => {
             >
               Contact
             </Link>
-            <div className="pt-2">
+            <div className="pt-4">
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full gradient-bg text-white hover:opacity-90 transition-opacity">
                   Get Started

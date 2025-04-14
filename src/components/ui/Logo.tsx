@@ -17,7 +17,13 @@ export const Logo = ({ className }: LogoProps) => {
       </div>
       <div className="flex flex-col items-start">
         <span className="text-2xl font-bold text-fidcent-navy dark:text-white">Fidcent Tech</span>
-        <span className="text-xs opacity-70">Innovative Solutions</span>
+        <div className="flex items-center space-x-1.5 text-xs">
+          <span className="opacity-70">Innovative Solutions</span>
+          <span className="text-gray-400">|</span>
+          <span className="text-xs font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/50 px-1.5 py-0.5 rounded">
+            RC 7718433
+          </span>
+        </div>
       </div>
     </div>
   );
