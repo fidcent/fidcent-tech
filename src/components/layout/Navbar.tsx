@@ -35,14 +35,14 @@ export const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex-shrink-0">
           <Link to="/">
             <Logo />
           </Link>
         </div>
         
         {/* Mobile menu button */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-3 md:hidden">
           <ThemeToggle />
           <button 
             onClick={toggleMobileMenu} 
@@ -58,22 +58,22 @@ export const Navbar = () => {
         </div>
         
         {/* Desktop navigation */}
-        <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
-          <Link to="/services" className="text-sm font-medium hover:text-fidcent-green transition-colors">
+        <div className="hidden md:flex md:items-center md:space-x-5 lg:space-x-7">
+          <Link to="/services" className="text-sm font-medium hover:text-fidcent-green transition-colors whitespace-nowrap">
             Services
           </Link>
-          <Link to="/about" className="text-sm font-medium hover:text-fidcent-green transition-colors">
+          <Link to="/about" className="text-sm font-medium hover:text-fidcent-green transition-colors whitespace-nowrap">
             About
           </Link>
-          <Link to="/careers" className="text-sm font-medium hover:text-fidcent-green transition-colors">
+          <Link to="/careers" className="text-sm font-medium hover:text-fidcent-green transition-colors whitespace-nowrap">
             Careers
           </Link>
-          <Link to="/contact" className="text-sm font-medium hover:text-fidcent-green transition-colors">
+          <Link to="/contact" className="text-sm font-medium hover:text-fidcent-green transition-colors whitespace-nowrap">
             Contact
           </Link>
           <ThemeToggle />
           <Link to="/contact">
-            <Button size="sm" className="gradient-bg text-white hover:opacity-90 transition-opacity">
+            <Button size="sm" className="gradient-bg text-white hover:opacity-90 transition-opacity whitespace-nowrap">
               Get Started
             </Button>
           </Link>

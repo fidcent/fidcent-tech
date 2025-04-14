@@ -119,9 +119,7 @@ export const Hero = () => {
                 <span className="inline-block px-4 py-2 rounded-full bg-fidcent-green/10 text-fidcent-green font-medium text-sm border border-fidcent-green/20">
                   Innovative Technology Solutions
                 </span>
-                <span className="text-xs font-medium text-gray-600 dark:text-gray-400 inline-flex items-center">
-                  RC 7718433
-                </span>
+                {/* Removed RC number from here */}
               </div>
               <h1 className="text-4xl md:text-7xl font-bold leading-tight text-fidcent-navy dark:text-white">
                 <span className="gradient-text">Transforming</span> Ideas into Digital Reality
