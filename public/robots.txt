@@ -1,0 +1,32 @@
+# Fidcent Tech Website - robots.txt
+# https://fidcent.com
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://fidcent.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin, API, and private pages
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /*.json$
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Allow important resources for rendering
+Allow: /_next/static/
+Allow: /assest/
