@@ -82,5 +82,5 @@ public/
 
 ## 📄 License
 
-© 2026 Fidcent Tech. All rights reserved.
+© 2026 Fidcent Tech. All rights reserved. 
 A Division of Fidcent Group | RC 7718433
