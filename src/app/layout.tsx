@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     description: 'Transform your business with cutting-edge software development, networking, and IT infrastructure solutions. Serving Africa and Europe.',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://fidcent.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Fidcent Tech - Innovative Technology Solutions',
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Fidcent Tech | Software Development & IT Solutions',
     description: 'Cutting-edge software development, networking, and IT infrastructure solutions across Africa and Europe.',
-    images: ['/og-image.png'],
+    images: ['https://fidcent.com/og-image.png'],
     creator: '@fidcenttech',
   },
   robots: {
