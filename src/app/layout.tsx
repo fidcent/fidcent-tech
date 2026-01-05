@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: 'Fidcent Tech | Leading Software Development & IT Infrastructure Solutions in Africa',
     template: '%s | Fidcent Tech'
   },
-  description: 'Fidcent Tech delivers cutting-edge software development, networking, and IT infrastructure solutions across Africa and Europe. Transform your business with our innovative technology services.',
+  description: 'Fidcent Tech delivers cutting-edge software development, networking, and IT infrastructure solutions across Africa and Europe. Transform your business with our innovative technology services. Creators of WishWing, the leading digital gifting platform with social wishlists and group gifting features.',
   keywords: [
     'software development Nigeria',
     'IT infrastructure Lagos',
@@ -42,7 +42,16 @@ export const metadata: Metadata = {
     'Fidcent Group',
     'IT consulting Lagos',
     'software development Europe',
-    'network setup Nigeria'
+    'network setup Nigeria',
+    'WishWing digital gifting',
+    'social gifting platform Nigeria',
+    'group gifting app',
+    'WishCoins currency',
+    'digital wishlist app',
+    'birthday gift app Nigeria',
+    'wedding registry app',
+    'celebration gifting platform',
+    'mobile gifting solution'
   ],
   authors: [{ name: 'Fidcent Tech', url: 'https://fidcent.com' }],
   creator: 'Fidcent Tech',

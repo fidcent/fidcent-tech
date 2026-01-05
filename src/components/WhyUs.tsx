@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useEffect, useState } from 'react'
+import Link from 'next/link'
 import { 
   Lightbulb, 
   Heart, 
@@ -83,7 +84,7 @@ export default function WhyUs() {
             <span className="gradient-text">Technology Partner</span>
           </h2>
           <p className="text-fidcent-light/70 text-lg">
-            We don&apos;t just deliver projects – we build lasting partnerships that drive your business forward.
+            We don&apos;t just deliver projects – we build lasting partnerships that drive your business forward. Our innovative approach brought <Link href="/products/wishwing" className="text-fidcent-gold hover:underline font-medium">WishWing digital gifting platform</Link> to life, featuring group gifting and social wishlists.
           </p>
         </div>
 

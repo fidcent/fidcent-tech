@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Us - Our Story, Mission & Values',
-  description: 'Learn about Fidcent Tech, a subsidiary of Fidcent Group. Discover our mission to transform businesses across Africa and Europe through innovative technology solutions.',
+  description: 'Learn about Fidcent Tech, a subsidiary of Fidcent Group and creators of WishWing digital gifting platform. Discover our mission to transform businesses across Africa and Europe through innovative technology solutions.',
   keywords: [
     'about Fidcent Tech',
     'Fidcent Group',
@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     'technology solutions Africa',
     'Nigerian tech company',
     'IT services Europe',
-    'digital transformation company'
+    'digital transformation company',
+    'WishWing creators',
+    'digital gifting platform developers',
+    'fintech solutions Nigeria'
   ],
   openGraph: {
     title: 'About Fidcent Tech | Our Story & Mission',

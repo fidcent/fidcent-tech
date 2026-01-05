@@ -88,7 +88,7 @@ export default function Services() {
           </h2>
           <p className="text-fidcent-light/70 text-lg">
             We deliver comprehensive technology services tailored to your business needs, 
-            helping you stay ahead in the digital landscape.
+            helping you stay ahead in the digital landscape. Our portfolio includes <Link href="/products/wishwing" className="text-fidcent-gold hover:underline font-medium">WishWing</Link>, a revolutionary digital gifting platform with group gifting and social wishlists.
           </p>
         </div>
 
