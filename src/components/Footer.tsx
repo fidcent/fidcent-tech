@@ -59,8 +59,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-fidcent-light/60 mb-6 max-w-sm">
-              Empowering businesses across Africa and Europe with innovative software solutions 
-              and robust IT infrastructure.
+              Empowering businesses across Africa and Europe with innovative software solutions, 
+              robust IT infrastructure, and transformative digital products like <Link href="/products/wishwing" className="text-fidcent-gold hover:underline">WishWing - our digital gifting platform</Link>.
             </p>
             
             {/* Contact Info */}

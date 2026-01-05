@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Globe, Users, Target, Lightbulb } from 'lucide-react'
 
 const values = [
@@ -97,7 +98,7 @@ export default function About() {
             
             <div className="space-y-4 text-fidcent-light/70 mb-8">
               <p>
-                <strong className="text-fidcent-light">Fidcent Tech</strong>, a proud division of Fidcent Group, 
+                <strong className="text-fidcent-light">Fidcent Tech</strong>, a proud division of Fidcent Group, is the innovative force behind <Link href="/products/wishwing" className="text-fidcent-gold hover:underline font-semibold">WishWing</Link>—Nigeria's premier digital gifting platform featuring social wishlists, group gifting, and WishCoins currency. 
                 was founded in 2024 with a vision to transform how businesses leverage technology across 
                 Africa and Europe.
               </p>

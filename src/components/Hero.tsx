@@ -70,7 +70,7 @@ export default function Hero() {
             
             <p className="text-lg md:text-xl text-fidcent-light/70 max-w-xl mx-auto lg:mx-0 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               Empowering businesses across Africa and Europe with innovative software solutions 
-              and robust IT infrastructure that drives growth and transformation.
+              and robust IT infrastructure that drives growth and transformation. Proud creators of <Link href="/products/wishwing" className="text-fidcent-gold hover:underline">WishWing</Link>, the premier digital gifting and social wishlist platform.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up" style={{ animationDelay: '0.4s' }}>

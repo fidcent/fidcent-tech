@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     'Fidcent Tech products',
     'digital currency gifts',
     'automated greetings',
+    'celebration app Nigeria',
+    'gift registry app',
+    'mobile gifting app',
+    'fintech gifting platform',
+    'Nigerian gift app',
+    'group gift contributions',
+    'wishlist app Nigeria',
+    'digital celebration platform'
   ],
   openGraph: {
     title: 'WishWing - Nigeria\'s Digital Gifting Platform',

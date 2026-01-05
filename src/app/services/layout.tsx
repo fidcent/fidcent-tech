@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Our Services - Software Development, IT Infrastructure & Cloud Solutions',
-  description: 'Explore Fidcent Tech\'s comprehensive IT services including custom software development, network solutions, cloud services, cybersecurity, and IT consulting. Serving businesses across Africa and Europe.',
+  description: 'Explore Fidcent Tech\'s comprehensive IT services including custom software development, network solutions, cloud services, cybersecurity, and IT consulting. Creators of WishWing digital gifting platform. Serving businesses across Africa and Europe.',
   keywords: [
     'software development services Nigeria',
     'IT infrastructure services Lagos',
@@ -13,7 +13,9 @@ export const metadata: Metadata = {
     'custom software development',
     'enterprise solutions',
     'DevOps services',
-    'digital transformation'
+    'digital transformation',
+    'WishWing creators',
+    'digital gifting platform developers'
   ],
   openGraph: {
     title: 'Our Services | Fidcent Tech',
